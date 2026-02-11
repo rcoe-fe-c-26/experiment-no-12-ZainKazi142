@@ -15,8 +15,11 @@ with open("story.txt", "r") as file:
             words.append(i)
 
 
-words.sort()
-
 words = set(words)
 
+words = list(words)
+
+words.sort()
+
 print(f"Following Unique words of length 8 present: {words}")
+
